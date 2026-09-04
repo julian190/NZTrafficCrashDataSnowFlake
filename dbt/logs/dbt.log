@@ -1,0 +1,50 @@
+==================== 2026-08-30T18:19:36.552399Z | 01a053e5-fce6-7c33-89ad-7b89a921d018 ====================
+18:19:36.552567 [info ]: Installing dbt project and profile setup
+18:19:36.566859 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+18:19:36.567080 [info ]: Success Project created successfully!
+18:19:36.567197 [info ]: Info Project name: NZCrash
+18:19:36.567329 [info ]: Info Project directory: NZCrash
+18:19:36.567447 [info ]: Info Setting up your profile...
+18:19:36.568024 [info ]: Loading ~/.dbt/profiles.yml
+18:19:36.568455 [info ]: Info Creating new profile...
+18:19:38.485864 [info ]: Found dbt_cloud.yml configuration
+18:19:38.486032 [info ]: Found active project: Untitled Project (ID: 70506183137328)
+18:19:49.903697 [warn ]: [DbtPlatformApiError (dbt1204)]: Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 404 Not Found
+18:19:49.903848 [info ]: No cloud config found for this adapter/project
+18:21:16.601297 [info ]: Success Profile written to C:\Users\jmeti\.dbt\profiles.yml
+18:21:16.601520 [info ]: Validating profile inputs, adapters, and connection
+
+18:21:16.601706 [info ]: dbt-fusion 2.0.0-preview.200
+18:21:16.602016 [info ]: Started loading project
+18:21:16.602949 [info ]: Loading ~/.dbt/profiles.yml
+18:21:16.603898 [info ]: Finished loading project [  0.00s]
+18:21:16.604061 [info ]: Started debugging
+18:21:16.604187 [info ]: Debugging profile: dev
+18:21:16.604349 [info ]: Debugging dbt version: 2.0.0-preview.200
+18:21:16.604509 [info ]: Debugging platform: windows x86_64 (windows)
+18:21:16.604671 [info ]: Debugging adapter type: snowflake (remote)
+18:21:16.635743 [info ]: Debugging dependencies:
+  git: OK
+18:21:16.636535 [info ]: Debugging connection:
+  "account": "FNPUXYG-JYB81674",
+  "user": "JULIANM",
+  "database": "NZCRASHDATA",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DBT"
+18:21:18.466140 [debug]: Query executed on node unknown:
+select 1 as id
+18:21:18.466335 [info ]: Debugging connection test: OK
+18:21:18.466929 [info ]: Debugged All checks passed!
+18:21:18.467426 [info ]: Finished debugging [  1.86s]
+18:21:19.312818 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+18:21:19.359404 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 warning for target 'dev' [1m 43s]
+==================== 2026-09-02T18:32:33.032830Z | 01a06364-ea03-7fc2-a080-96d49a987588 ====================
+18:32:33.033814 [info ]: dbt-fusion 2.0.0-preview.212
+18:32:33.035483 [info ]: Started loading project
+18:32:33.035757 [info ]: Finished loading project [  0.00s]
+18:32:33.036281 [error]: [IoError (dbt1001)]: Cannot open file D:\source\DataEngineer\NZTrafficCrashDataSnowFlake\dbt\dbt_project.yml: Failed to open file: D:\source\DataEngineer\NZTrafficCrashDataSnowFlake\dbt\dbt_project.yml: The system cannot find the file specified. (os error 2): The system cannot find the file specified. (os error 2)
+18:32:33.245930 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [213ms]

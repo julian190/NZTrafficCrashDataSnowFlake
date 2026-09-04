@@ -1,0 +1,48 @@
+name: NZCrash
+
+profile: NZCrash
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  # Builds seeds into '<your_schema_name>_raw'
+  NZCrash:
+    +schema: raw
+
+models:
+  NZCrash:
+    +static_analysis: strict
+    # Materialize staging models as views, and marts as tables
+    staging:
+      +materialized: view
+      stg_customers:
+        +enabled: false
+      stg_locations:
+        +enabled: false
+      stg_order_items:
+        +enabled: false
+      stg_orders:
+        +enabled: false
+      stg_products:
+        +enabled: false
+      stg_supplies:
+        +enabled: false
+    marts:
+      +materialized: table
+      customers:
+        +enabled: false
+      locations:
+        +enabled: false
+      order_items:
+        +enabled: false
+      orders:
+        +enabled: false
+      products:
+        +enabled: false
+      supplies:
+        +enabled: false

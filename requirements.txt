@@ -1,0 +1,4 @@
+pandas
+python-dotenv
+apache-airflow
+pip install snowflake-connector-python[pandas]
