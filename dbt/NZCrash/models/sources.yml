@@ -1,10 +1,13 @@
 version: 2
 
 sources:
-  - name: NZCRASHDATA
+  - name: raw
+    database: NZCRASHDATA
     schema: RAW
     tables:
       - name: NZ_Traffic_Crash
+        quoting:
+          identifier: true
         description: >
           Raw traffic crash data from the Waka Kotahi NZ Transport Agency.
           Each row represents a single crash event with detailed information about the crash.
